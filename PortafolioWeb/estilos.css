@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Kalam:wght@700&family=Righteous&family=Rock+Salt&family=Work+Sans:wght@800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'work sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*me permite deslizar cuando hago click en los link del menu*/
+    scroll-behavior: smooth;
+}
+/*MENU*/
+.contenedor-header{
+    background: rgb(68, 61, 61);
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Rock salt';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px; 
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color:#1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.contenedor-header header nav ul li a{
+    animation-name: bua;
+    animation-duration: 4s;
+    animation-direction: normal;
+    animation-iteration-count: initial;
+    
+}
+@keyframes bua{
+    from{
+        margin: 0 0;
+        color:  rgb(68, 61, 61);
+        
+    }
+    to{
+        margin: 0 15px;
+        color: #fff;
+       
+        
+    }
+    
+}
+
+.contenedor-header .logo a{
+    animation-name: lua;
+    animation-duration: 4s;
+    animation-direction: normal;
+    animation-iteration-count: initial;
+    
+}
+@keyframes lua{
+    from{
+        font-size: 0px;
+        color:  rgb(68, 61, 61);
+        
+    }
+    to{
+        font-size: 36px;
+        color: #1CB698;
+       
+        
+    }
+    
+}
+
+
+.contenedor-img img{
+    animation-name: ima;
+    animation-duration: 4s;
+    animation-direction: inherit;
+    animation-iteration-count: inherit;
+    
+    
+    
+}
+@keyframes ima{
+    from{
+        width: 0%;
+        
+    }
+    to{
+        width: 55%;
+       
+        
+    }
+    
+}
+
+.contenedor-img img{
+    width: 200px;
+    border-radius: 200px;
+    margin-top: 90px;
+}
+/*SECCION I N I C I O*/
+#inicio.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(fondo.jpg);
+    background-size: cover;
+    height: fit-content;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+}
+#inicio.inicio h1{
+    font-family: 'kalam';
+    margin-top: 10px;
+    font-size: 35px;
+}
+#inicio.inicio h2{
+    font-family: 'kalam';
+    font-weight: normal;
+    font-size: 12px;
+    
+}
+
+.inicio .contenido-banner{
+    padding: 5px;
+    background-color: rgba(30,35,38,1);
+    max-width: 280px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    margin-top: 140px ;
+    margin-block-end: 140px;
+    
+}
+.inicio .contenido-banner img{
+    
+    border: 4px solid black;
+    width: 55%;
+    margin: auto;
+    margin-top: auto;
+}
+
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 30px 5px;
+    font-size: 17px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1CB698;
+}
+
+.sobremi{
+    background-color: rgba(30,35,38,1);
+    color: #fff;
+    padding: 50px 20px;
+
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'kalam';
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.sobremi .contenido-seccion p{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+}
+
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'kalam';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span{
+   background-color: #1CB698;
+   padding: 3px;
+   font-weight: bold;
+   border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 39px;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: .5s;
+}
+
+.sobremi button:hover .overlay{
+    width: 169px;}
+
+/* SECCION S K I L L S*/
+
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'kalam';
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.skills .fila{
+    display: flex;
+}
+
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'kalam';
+    margin-bottom: 25px;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: #1CB698 ;
+    border-radius: 50px;
+    text-align: center;
+    top: -17;
+    right: -15;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.skills .skill .javascript{
+    width: 0;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+   from{
+    width: 0%;
+   }
+    to{
+        width: 20%;
+}
+}
